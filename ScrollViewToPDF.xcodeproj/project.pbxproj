@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17B5C1D131A2550B4009385D /* PDFImageConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C3D82F19285DA09829E2 /* PDFImageConverter.m */; };
 		17B5C22395F9660DBB5A105B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CE74969F00C033E40D5E /* Foundation.framework */; };
 		17B5C3454A0B13707DC7490D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CB9D01231AF4A3983B6B /* AppDelegate.m */; };
 		17B5C352EAA06029784E7923 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C198F57BB23CD2CE583E /* main.m */; };
@@ -17,7 +16,9 @@
 		17B5C694C17501BB4978A847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C10A69964E65C2143BA9 /* UIKit.framework */; };
 		17B5C7CA0CAE5792CE48943E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C9904AA66326810DDD60 /* Default-568h@2x.png */; };
 		17B5C7E526ACDC911558E134 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C0810CED902A416E8B6E /* Default@2x.png */; };
+		17B5C82DF8CF29739048A699 /* PDFImageConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C3E9CEE44C188155BE07 /* PDFImageConverter.m */; };
 		17B5C88BF48385AB8812D0C7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C2ED78EC3137539B6AD2 /* Default.png */; };
+		17B5C9228D60CA9C46776AFD /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CFD72C238C149322701D /* license.txt */; };
 		17B5CCD51FD8E1BE29EBE022 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C2D421036664D0023DAD /* MainStoryboard.storyboard */; };
 		17B5CED65E3C5172E0E2016C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C1826954D09DE948F29F /* CoreGraphics.framework */; };
 		73BD06FF161965B100313962 /* browser_logos-256.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BD06FE161965B100313962 /* browser_logos-256.png */; };
@@ -30,19 +31,20 @@
 		17B5C1826954D09DE948F29F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		17B5C198F57BB23CD2CE583E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17B5C2ED78EC3137539B6AD2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		17B5C3D82F19285DA09829E2 /* PDFImageConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFImageConverter.m; sourceTree = "<group>"; };
+		17B5C3E9CEE44C188155BE07 /* PDFImageConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFImageConverter.m; sourceTree = "<group>"; };
 		17B5C43292CB23612DBF8E06 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		17B5C557E522F1154DAA5F8F /* ScrollViewToPDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewToPDF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5C612C837D07ED5E13B73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5C7172EC30B6F87A85814 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		17B5C77991ACF408DC0B107E /* ScrollViewToPDF-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScrollViewToPDF-Prefix.pch"; sourceTree = "<group>"; };
 		17B5C77BFBEFDF7BC5BCFC7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		17B5C80922A7E19D38C54848 /* PDFImageConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFImageConverter.h; sourceTree = "<group>"; };
+		17B5C8DA741645D4413DBB21 /* PDFImageConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFImageConverter.h; sourceTree = "<group>"; };
 		17B5C9904AA66326810DDD60 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		17B5CB9D01231AF4A3983B6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		17B5CE4BD971D061CAF11E39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17B5CE74969F00C033E40D5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17B5CEDEA5078EB39BA27C42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		17B5CFD72C238C149322701D /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		73BD06FE161965B100313962 /* browser_logos-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser_logos-256.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,11 +71,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		17B5C3F0F81923EEA8A3294F /* PDFImageConverter */ = {
+			isa = PBXGroup;
+			children = (
+				17B5CFD72C238C149322701D /* license.txt */,
+				17B5C8DA741645D4413DBB21 /* PDFImageConverter.h */,
+				17B5C3E9CEE44C188155BE07 /* PDFImageConverter.m */,
+			);
+			path = PDFImageConverter;
+			sourceTree = "<group>";
+		};
 		17B5C44DB344439B6E8F701C /* ScrollViewToPDF */ = {
 			isa = PBXGroup;
 			children = (
-				17B5C80922A7E19D38C54848 /* PDFImageConverter.h */,
-				17B5C3D82F19285DA09829E2 /* PDFImageConverter.m */,
 				17B5C43292CB23612DBF8E06 /* TableViewController.m */,
 				17B5C7172EC30B6F87A85814 /* TableViewController.h */,
 				73BD06FE161965B100313962 /* browser_logos-256.png */,
@@ -81,6 +91,7 @@
 				17B5CB9D01231AF4A3983B6B /* AppDelegate.m */,
 				17B5CE4BD971D061CAF11E39 /* AppDelegate.h */,
 				17B5C6FA5690AEF963B89D8B /* Supporting Files */,
+				17B5C3F0F81923EEA8A3294F /* PDFImageConverter */,
 			);
 			path = ScrollViewToPDF;
 			sourceTree = "<group>";
@@ -172,6 +183,7 @@
 				17B5C7CA0CAE5792CE48943E /* Default-568h@2x.png in Resources */,
 				17B5CCD51FD8E1BE29EBE022 /* MainStoryboard.storyboard in Resources */,
 				73BD06FF161965B100313962 /* browser_logos-256.png in Resources */,
+				17B5C9228D60CA9C46776AFD /* license.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +197,7 @@
 				17B5C352EAA06029784E7923 /* main.m in Sources */,
 				17B5C3454A0B13707DC7490D /* AppDelegate.m in Sources */,
 				17B5C4665E7B8821BD681975 /* TableViewController.m in Sources */,
-				17B5C1D131A2550B4009385D /* PDFImageConverter.m in Sources */,
+				17B5C82DF8CF29739048A699 /* PDFImageConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
