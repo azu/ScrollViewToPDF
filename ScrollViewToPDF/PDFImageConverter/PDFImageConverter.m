@@ -27,7 +27,7 @@
     double pageHeight = image.size.height * image.scale * 72 / vertRes;
     
     NSMutableData *pdfFile = [[NSMutableData alloc] init];
-    CGDataConsumerRef pdfConsumer = CGDataConsumerCreateWithCFData((CFMutableDataRef)pdfFile);
+    CGDataConsumerRef pdfConsumer = CGDataConsumerCreateWithCFData((__bridge CFMutableDataRef)pdfFile);
     // The page size matches the image, no white borders.
     CGRect mediaBox = CGRectMake(0, 0, pageWidth, pageHeight);
     CGContextRef pdfContext = CGPDFContextCreate(pdfConsumer, &mediaBox, NULL);
@@ -37,8 +37,7 @@
     CGContextEndPage(pdfContext);
     CGContextRelease(pdfContext);
     CGDataConsumerRelease(pdfConsumer);
-    
-    [pdfFile autorelease];
+
     return pdfFile;
 }
 
@@ -64,7 +63,7 @@
     CGRect imageBox = CGRectMake(boundsRect.origin.x, boundsRect.origin.y + boundsRect.size.height - imageHeight, imageWidth, imageHeight);
     
     NSMutableData *pdfFile = [[NSMutableData alloc] init];
-    CGDataConsumerRef pdfConsumer = CGDataConsumerCreateWithCFData((CFMutableDataRef)pdfFile);
+    CGDataConsumerRef pdfConsumer = CGDataConsumerCreateWithCFData((__bridge CFMutableDataRef)pdfFile);
     
     CGRect mediaBox = CGRectMake(0, 0, pageSize.width, pageSize.height);
     CGContextRef pdfContext = CGPDFContextCreate(pdfConsumer, &mediaBox, NULL);
@@ -74,8 +73,7 @@
     CGContextEndPage(pdfContext);
     CGContextRelease(pdfContext);
     CGDataConsumerRelease(pdfConsumer);
-    
-    [pdfFile autorelease];
+
     return pdfFile;
 }
 
