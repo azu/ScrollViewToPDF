@@ -9,6 +9,10 @@
 
 
 @interface TableViewController : UITableViewController
-- (IBAction)openScreenShot:(id)sender;
+
+@property(nonatomic, copy) NSString *pdfPath;
+
+- (IBAction)openAllOnePagePDF:(id)sender;
+- (IBAction)openPerPagePDF:(id)sender;
 
 @end
