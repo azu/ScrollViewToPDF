@@ -61,6 +61,7 @@
 
 - (UIImage *)screenShotScrollView:(UIScrollView *)scrollView {
     /* スクリーンショット用の準備 */
+    // インジケータを非表示にする
     [self.tableView setShowsHorizontalScrollIndicator:NO];
     [self.tableView setShowsVerticalScrollIndicator:NO];
 
@@ -80,10 +81,6 @@
         scrollView.frame = savedFrame;
     }
     UIGraphicsEndImageContext();
-
-
-    [self.tableView setShowsHorizontalScrollIndicator:NO];
-    [self.tableView setShowsVerticalScrollIndicator:NO];
 
     if (image != nil){
         return image;
