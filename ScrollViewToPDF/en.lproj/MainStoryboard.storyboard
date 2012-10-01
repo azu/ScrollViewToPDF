@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11G56" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="w6p-gp-UJu">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="bd4-bf-aEr">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="w6p-gp-UJu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QVN-dk-zDi">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xaZ-ev-aNJ">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="G1c-SR-dFk" kind="relationship" relationship="rootViewController" id="nFn-hD-JkR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCQ-ku-z8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-678" y="53"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="OcB-9F-ceu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfT-zr-FF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="G1c-SR-dFk" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iv5-Ui-fQU">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="" id="CfH-4a-hIu">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="128" id="121-Ba-7IU">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="browser_logos-256.png" translatesAutoresizingMaskIntoConstraints="NO" id="LKe-ys-jvj">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="127" id="F0N-Xd-jeo"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="LKe-ys-jvj" firstAttribute="trailing" secondItem="121-Ba-7IU" secondAttribute="trailing" type="default" id="4I4-dd-fEV"/>
+                                            <constraint firstItem="LKe-ys-jvj" firstAttribute="top" secondItem="121-Ba-7IU" secondAttribute="top" type="default" id="cHY-nr-y8Q"/>
+                                            <constraint firstItem="LKe-ys-jvj" firstAttribute="leading" secondItem="121-Ba-7IU" secondAttribute="leading" type="default" id="exm-Wy-s1l"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="128" id="OHd-sY-qiO">
+                                        <rect key="frame" x="0.0" y="128" width="320" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="browser_logos-256.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mq0-Z6-5y4">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="127" id="7L7-Ks-H4a"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Mq0-Z6-5y4" firstAttribute="trailing" secondItem="OHd-sY-qiO" secondAttribute="trailing" type="default" id="5Lh-zR-yvI"/>
+                                            <constraint firstItem="Mq0-Z6-5y4" firstAttribute="leading" secondItem="OHd-sY-qiO" secondAttribute="leading" type="default" id="Vf0-PP-J7h"/>
+                                            <constraint firstItem="Mq0-Z6-5y4" firstAttribute="top" secondItem="OHd-sY-qiO" secondAttribute="top" type="default" id="kjq-ND-94e"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="128" id="6l7-Ic-xT2">
+                                        <rect key="frame" x="0.0" y="256" width="320" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="browser_logos-256.png" translatesAutoresizingMaskIntoConstraints="NO" id="fmM-CU-cRh">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="127" id="Wve-Qb-qip"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="fmM-CU-cRh" firstAttribute="trailing" secondItem="6l7-Ic-xT2" secondAttribute="trailing" type="default" id="10j-zr-sho"/>
+                                            <constraint firstItem="fmM-CU-cRh" firstAttribute="leading" secondItem="6l7-Ic-xT2" secondAttribute="leading" type="default" id="oyb-Wq-aZf"/>
+                                            <constraint firstItem="fmM-CU-cRh" firstAttribute="top" secondItem="6l7-Ic-xT2" secondAttribute="top" type="default" id="yCe-m3-TQa"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="128" id="3fi-5Z-pJe">
+                                        <rect key="frame" x="0.0" y="384" width="320" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="browser_logos-256.png" translatesAutoresizingMaskIntoConstraints="NO" id="l7A-XW-s4D">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="127" id="dJz-ah-dIP"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="l7A-XW-s4D" firstAttribute="top" secondItem="3fi-5Z-pJe" secondAttribute="top" type="default" id="XtX-lt-L4c"/>
+                                            <constraint firstItem="l7A-XW-s4D" firstAttribute="trailing" secondItem="3fi-5Z-pJe" secondAttribute="trailing" type="default" id="XuC-3L-PHb"/>
+                                            <constraint firstItem="l7A-XW-s4D" firstAttribute="leading" secondItem="3fi-5Z-pJe" secondAttribute="leading" type="default" id="tR3-5c-DUV"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="128" id="hZL-xR-J8V">
+                                        <rect key="frame" x="0.0" y="512" width="320" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="browser_logos-256.png" translatesAutoresizingMaskIntoConstraints="NO" id="ydS-HA-0L7">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="127" id="x0K-DH-lAb"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="ydS-HA-0L7" firstAttribute="top" secondItem="hZL-xR-J8V" secondAttribute="top" type="default" id="OhE-PM-wao"/>
+                                            <constraint firstItem="ydS-HA-0L7" firstAttribute="trailing" secondItem="hZL-xR-J8V" secondAttribute="trailing" type="default" id="c2Q-dL-1x7"/>
+                                            <constraint firstItem="ydS-HA-0L7" firstAttribute="leading" secondItem="hZL-xR-J8V" secondAttribute="leading" type="default" id="u1k-Cq-omF"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="128" id="vIE-bo-var">
+                                        <rect key="frame" x="0.0" y="640" width="320" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="browser_logos-256.png" translatesAutoresizingMaskIntoConstraints="NO" id="o9a-kf-ECd">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="127" id="9uH-T0-eyo"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="o9a-kf-ECd" firstAttribute="leading" secondItem="vIE-bo-var" secondAttribute="leading" type="default" id="TZu-pF-HJd"/>
+                                            <constraint firstItem="o9a-kf-ECd" firstAttribute="top" secondItem="vIE-bo-var" secondAttribute="top" type="default" id="aog-5V-7qO"/>
+                                            <constraint firstItem="o9a-kf-ECd" firstAttribute="trailing" secondItem="vIE-bo-var" secondAttribute="trailing" type="default" id="fIR-rP-ozv"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="128" id="NJf-eO-UDb">
+                                        <rect key="frame" x="0.0" y="768" width="320" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="browser_logos-256.png" translatesAutoresizingMaskIntoConstraints="NO" id="uvJ-Km-KNA">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="127" id="u64-80-nLX"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="uvJ-Km-KNA" firstAttribute="trailing" secondItem="NJf-eO-UDb" secondAttribute="trailing" type="default" id="USD-ou-brB"/>
+                                            <constraint firstItem="uvJ-Km-KNA" firstAttribute="leading" secondItem="NJf-eO-UDb" secondAttribute="leading" type="default" id="dOC-tp-SYr"/>
+                                            <constraint firstItem="uvJ-Km-KNA" firstAttribute="top" secondItem="NJf-eO-UDb" secondAttribute="top" type="default" id="qRc-1x-hbj"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="128" id="E1p-Rp-6f0">
+                                        <rect key="frame" x="0.0" y="896" width="320" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="browser_logos-256.png" translatesAutoresizingMaskIntoConstraints="NO" id="t5a-Sk-f79">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="127" id="3lV-ds-Efn"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="t5a-Sk-f79" firstAttribute="leading" secondItem="E1p-Rp-6f0" secondAttribute="leading" type="default" id="BhS-p2-Nb8"/>
+                                            <constraint firstItem="t5a-Sk-f79" firstAttribute="trailing" secondItem="E1p-Rp-6f0" secondAttribute="trailing" type="default" id="MB0-UG-5jD"/>
+                                            <constraint firstItem="t5a-Sk-f79" firstAttribute="top" secondItem="E1p-Rp-6f0" secondAttribute="top" type="default" id="Mge-cR-UHZ"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="128" id="DQw-rR-pMZ">
+                                        <rect key="frame" x="0.0" y="1024" width="320" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="browser_logos-256.png" translatesAutoresizingMaskIntoConstraints="NO" id="1v9-Iq-dsY">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="127" id="GaC-QD-HNQ"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="1v9-Iq-dsY" firstAttribute="leading" secondItem="DQw-rR-pMZ" secondAttribute="leading" type="default" id="eZf-P6-3j6"/>
+                                            <constraint firstItem="1v9-Iq-dsY" firstAttribute="top" secondItem="DQw-rR-pMZ" secondAttribute="top" type="default" id="rsD-lx-xTX"/>
+                                            <constraint firstItem="1v9-Iq-dsY" firstAttribute="trailing" secondItem="DQw-rR-pMZ" secondAttribute="trailing" type="default" id="vhu-2E-Mei"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="128" id="5JP-Xp-duq">
+                                        <rect key="frame" x="0.0" y="1152" width="320" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="browser_logos-256.png" translatesAutoresizingMaskIntoConstraints="NO" id="8di-mp-Ss9">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="127" id="xWq-AE-cOb"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="8di-mp-Ss9" firstAttribute="top" secondItem="5JP-Xp-duq" secondAttribute="top" type="default" id="4lW-4E-C4P"/>
+                                            <constraint firstItem="8di-mp-Ss9" firstAttribute="leading" secondItem="5JP-Xp-duq" secondAttribute="leading" type="default" id="DsK-4d-uE3"/>
+                                            <constraint firstItem="8di-mp-Ss9" firstAttribute="trailing" secondItem="5JP-Xp-duq" secondAttribute="trailing" type="default" id="h3R-Oo-d11"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="128" id="o12-vD-xTq">
+                                        <rect key="frame" x="0.0" y="1280" width="320" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="browser_logos-256.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Sq-Gh-b3e">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="127" id="mn5-03-DGg"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="7Sq-Gh-b3e" firstAttribute="trailing" secondItem="o12-vD-xTq" secondAttribute="trailing" type="default" id="bMA-t9-5e2"/>
+                                            <constraint firstItem="7Sq-Gh-b3e" firstAttribute="leading" secondItem="o12-vD-xTq" secondAttribute="leading" type="default" id="mtE-5Y-SZG"/>
+                                            <constraint firstItem="7Sq-Gh-b3e" firstAttribute="top" secondItem="o12-vD-xTq" secondAttribute="top" type="default" id="uMX-XP-Uw7"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="G1c-SR-dFk" id="my0-BR-P0V"/>
+                            <outlet property="delegate" destination="G1c-SR-dFk" id="Gul-bh-pfp"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="DJv-56-uIk">
+                        <barButtonItem key="rightBarButtonItem" title="PDF" id="ve0-sD-xLA">
+                            <connections>
+                                <action selector="openScreenShot:" destination="G1c-SR-dFk" id="GeG-W3-c5H"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="-256" y="53"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="browser_logos-256.png" width="1439" height="269"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="openScreenShot:"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
