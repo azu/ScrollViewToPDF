@@ -14,6 +14,7 @@
 		17B5C4B4AFA366B56B01F586 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CEDEA5078EB39BA27C42 /* QuartzCore.framework */; };
 		17B5C5F5C4C99F6FBDC2420B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C8C80B56220B86BB4EBD /* InfoPlist.strings */; };
 		17B5C694C17501BB4978A847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C10A69964E65C2143BA9 /* UIKit.framework */; };
+		17B5C6C87E1D60E9E721FD10 /* ScrollViewToPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C0A0875CEFE08625C083 /* ScrollViewToPDF.m */; };
 		17B5C7CA0CAE5792CE48943E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C9904AA66326810DDD60 /* Default-568h@2x.png */; };
 		17B5C7E526ACDC911558E134 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C0810CED902A416E8B6E /* Default@2x.png */; };
 		17B5C82DF8CF29739048A699 /* PDFImageConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C3E9CEE44C188155BE07 /* PDFImageConverter.m */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		17B5C0810CED902A416E8B6E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		17B5C0A0875CEFE08625C083 /* ScrollViewToPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewToPDF.m; sourceTree = "<group>"; };
 		17B5C0EDDEECAF19FC402438 /* ScrollViewToPDF-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ScrollViewToPDF-Info.plist"; sourceTree = "<group>"; };
 		17B5C10A69964E65C2143BA9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		17B5C1826954D09DE948F29F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -38,6 +40,7 @@
 		17B5C7172EC30B6F87A85814 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		17B5C77991ACF408DC0B107E /* ScrollViewToPDF-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScrollViewToPDF-Prefix.pch"; sourceTree = "<group>"; };
 		17B5C77BFBEFDF7BC5BCFC7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		17B5C7B7EE4262E624A51F19 /* ScrollViewToPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewToPDF.h; sourceTree = "<group>"; };
 		17B5C8DA741645D4413DBB21 /* PDFImageConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFImageConverter.h; sourceTree = "<group>"; };
 		17B5C9904AA66326810DDD60 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		17B5CB9D01231AF4A3983B6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 				17B5CE4BD971D061CAF11E39 /* AppDelegate.h */,
 				17B5C6FA5690AEF963B89D8B /* Supporting Files */,
 				17B5C3F0F81923EEA8A3294F /* PDFImageConverter */,
+				17B5CB4E7534D2F1A7F48F23 /* ScrollViewToPDF */,
 			);
 			path = ScrollViewToPDF;
 			sourceTree = "<group>";
@@ -128,6 +132,15 @@
 				17B5C10A69964E65C2143BA9 /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17B5CB4E7534D2F1A7F48F23 /* ScrollViewToPDF */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C7B7EE4262E624A51F19 /* ScrollViewToPDF.h */,
+				17B5C0A0875CEFE08625C083 /* ScrollViewToPDF.m */,
+			);
+			path = ScrollViewToPDF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +211,7 @@
 				17B5C3454A0B13707DC7490D /* AppDelegate.m in Sources */,
 				17B5C4665E7B8821BD681975 /* TableViewController.m in Sources */,
 				17B5C82DF8CF29739048A699 /* PDFImageConverter.m in Sources */,
+				17B5C6C87E1D60E9E721FD10 /* ScrollViewToPDF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
